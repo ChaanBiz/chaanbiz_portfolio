@@ -23,6 +23,7 @@ body header .logo img {
   width: 100px;
   padding: 5px 10px;
   border-bottom: 4px solid black;
+  transition: 0.5s;
 }
 body header ul {
   display: flex;
@@ -161,6 +162,7 @@ body .bottom .social a i:hover {
 }
 body section {
   padding-top: 9rem;
+  transition: 0.5s;
 }
 body .heading {
   text-align: center;
@@ -727,6 +729,9 @@ body .buttons a:active {
   border-radius: 50% 0 50%;
   filter: blur(80px);
 }
+.case_study .summary img {
+  width: 100%;
+}
 .case_study .process {
   position: relative;
 }
@@ -775,6 +780,19 @@ body .buttons a:active {
     text-align: center;
   }
 }
+@media (max-width: 2000px) {
+  .case_study .boxes .text p, .case_study .boxes .text li {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .case_study .boxes .padd {
+    padding: 30px 5rem 0;
+  }
+  .case_study .boxes .wrapper .text {
+    padding: 3rem;
+  }
+}
 @media (max-width: 1830px) {
   .home .left .social_media {
     padding: 0;
@@ -791,6 +809,53 @@ body .buttons a:active {
   #works .ellipse2 {
     width: 1000px;
     border-radius: 0 50% 50% 0;
+  }
+  .case_study footer .wrapper .right .contacts h3, body .project h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .case_study .top_part {
+    flex-direction: column;
+  }
+  .case_study .top_part img {
+    width: 200px;
+  }
+  .case_study .top_part .text h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .case_study .top_part .text p {
+    line-height: 25px;
+    margin-left: 0;
+  }
+  .case_study .project span {
+    font-size: 20px;
+  }
+  .case_study .bottom {
+    padding: 0 10px;
+  }
+  .case_study footer {
+    margin: 25px 25px 20px;
+  }
+}
+@media (max-width: 1560px) {
+  .case_study .heading2 h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .case_study .boxes h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .case_study .boxes .images {
+    width: 100%;
+  }
+  .case_study .process .wrapper, .case_study .ss .wrapper {
+    flex-direction: column;
+  }
+  .case_study .process .wrapper .text, .case_study .ss .wrapper .text {
+    margin: 40px 50px;
+    padding: 3rem;
   }
 }
 @media (max-width: 1455px) {
@@ -822,9 +887,14 @@ body .buttons a:active {
   body header {
     padding: 10px 2rem;
   }
+  body header .logo img {
+    width: 60px;
+    padding: 2px 4px;
+    border-bottom: 3px solid black;
+  }
   body header .nav {
     position: fixed;
-    top: 117.46px;
+    top: 83.11px;
     right: -100%;
     width: 100%;
     height: 100vh;
@@ -841,6 +911,12 @@ body .buttons a:active {
   }
   body header .nav li button {
     margin-bottom: 30px;
+  }
+  body header .nav li button a {
+    padding: 10px 20px;
+  }
+  body header .nav li button a:hover {
+    padding: 10px 20px;
   }
   body header .nav a {
     font-size: 20px;
@@ -899,6 +975,17 @@ body .buttons a:active {
   body .heading p {
     padding: 0 50px;
   }
+  body .project p {
+    text-align: center;
+  }
+  body .bottom p {
+    text-align: center;
+  }
+  body .bottom .social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   #works .ellipse2 {
     width: 800px;
     border-radius: 0 50% 50% 0;
@@ -915,16 +1002,42 @@ body .buttons a:active {
   #contacts .container .wrap .left .about {
     padding: 60px 0;
   }
-  body .project p {
-    text-align: center;
+  .case_study {
+    padding-top: 7rem;
   }
-  body .bottom p {
-    text-align: center;
+  .case_study .summary .ellipse, .case_study .process .ellipse, .case_study .ss .ellipse {
+    width: 900px;
+    height: 900px;
   }
-  body .bottom .social {
-    display: flex;
+  .case_study .options {
+    flex-direction: column;
+    align-items: center;
+  }
+  .case_study .options .box {
+    margin: 20px 0;
+  }
+  .case_study footer .wrapper {
+    flex-direction: column;
+  }
+  .case_study footer .wrapper .top_part {
+    margin-bottom: 50px;
+    flex-direction: row;
+    flex: none;
     justify-content: center;
-    flex-wrap: wrap;
+  }
+  .case_study footer .wrapper .top_part .text {
+    text-align: center;
+  }
+  .case_study footer .wrapper .right .contacts h3, .case_study footer .wrapper .project h3 {
+    font-size: 30px;
+    line-height: 25px;
+  }
+  .case_study footer .wrapper .right {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .case_study footer .wrapper .right .contacts h3 {
+    text-align: center;
   }
 }
 @media (max-width: 1050px) {
@@ -968,6 +1081,13 @@ body .buttons a:active {
   #services .wrap .services .box h3 {
     font-size: 27px;
     line-height: 30px;
+  }
+  .case_study .boxes {
+    margin: 0 25px 50px;
+  }
+  .case_study .summary .ellipse, .case_study .process .ellipse, .case_study .ss .ellipse {
+    width: 700px;
+    height: 700px;
   }
 }
 @media (max-width: 950px) {
@@ -1032,10 +1152,44 @@ body .buttons a:active {
     width: 600px;
     height: 1000px;
   }
+  .case_study .boxes {
+    padding: 20px;
+    border-radius: 70px;
+    margin: 0 20px 50px;
+  }
+  .case_study .boxes .padd {
+    padding: 30px;
+  }
+  .case_study .boxes .wrapper .text {
+    margin: 40px 0;
+    padding: 2rem;
+  }
+  .case_study .boxes .text p, .case_study .boxes .text li {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .case_study .summary .ellipse, .case_study .process .ellipse, .case_study .ss .ellipse {
+    width: 450px;
+    height: 700px;
+  }
+  .case_study .options .box {
+    width: 550px;
+    padding: 20px 20px 30px;
+    border-radius: 40px;
+  }
 }
 @media (max-width: 630px) {
+  body section {
+    padding-top: 7rem;
+  }
   body .home {
     margin: 0 10px;
+  }
+  body .home .left {
+    border-radius: 500px 500px 300px 300px;
+  }
+  body .home .left .discount {
+    padding: 30px 30px 0;
   }
   body .home .left .discount h2 {
     font-size: 45px;
@@ -1053,7 +1207,10 @@ body .buttons a:active {
     font-size: 20px;
   }
   body .home .left .social_media {
-    padding: 30px 30px 0 30px;
+    padding: 15px 15px 20px;
+  }
+  body .home .left .social_media a {
+    margin: 0;
   }
   body .home .right {
     padding: 10px;
@@ -1171,6 +1328,36 @@ body .buttons a:active {
   body #contacts .container .bottom {
     padding: 0;
   }
+  body .footer {
+    text-align: center;
+    padding: 20px 30px 20px;
+    font-size: 15px;
+  }
+  body .case_study .heading2 h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  body .case_study .heading2 .details {
+    padding: 30px;
+  }
+  body .case_study .heading2 .details p {
+    font-size: 18px;
+  }
+  body .case_study .boxes h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  body .case_study .options .box {
+    width: 450px;
+    padding: 20px 20px 30px;
+    border-radius: 40px;
+  }
+  body .case_study footer .wrapper .top_part {
+    margin-bottom: 50px;
+    flex-direction: column;
+    flex: none;
+    justify-content: center;
+  }
 }
 @media (max-width: 500px) {
   body .heading h2 {
@@ -1223,6 +1410,33 @@ body .buttons a:active {
   body .buttons a {
     font-size: 18px;
     padding: 10px 30px;
+  }
+  body .case_study .boxes {
+    padding: 15px;
+    border-radius: 40px;
+    margin: 0 20px 25px;
+  }
+  body .case_study .boxes img {
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(131, 65, 65, 0.5);
+  }
+  body .case_study .boxes .wrapper .text {
+    border-radius: 40px;
+    margin: 20px 0;
+  }
+  body .case_study .boxes h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  body .case_study .options .box {
+    width: 350px;
+    padding: 15px 15px 20px;
+    border-radius: 40px;
+  }
+  body .case_study .summary .ellipse, body .case_study .process .ellipse, body .case_study .ss .ellipse {
+    width: 300px;
+    height: 500px;
   }
 }
 

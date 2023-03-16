@@ -25,6 +25,7 @@ body {
                 width: 100px;
                 padding: 5px 10px;
                 border-bottom: 4px solid black;
+                transition: .5s;
             }
         }
         ul {
@@ -171,6 +172,7 @@ body {
     }
     section {
         padding-top: 9rem;
+        transition: .5s;
     }
     .heading {
         text-align: center;
@@ -746,6 +748,9 @@ body {
             border-radius: 50% 0 50%;
             filter: blur(80px);
         }
+        img {
+            width: 100%;
+        }
     }
     .process {
         position: relative;
@@ -801,6 +806,22 @@ body {
     }
 }
 
+@media (max-width: 2000px) {
+    .case_study .boxes {
+        .text p, .text li {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+        .padd {
+            padding: 30px 5rem 0;
+        }
+        .wrapper .text {
+            padding: 3rem;
+        }
+    }
+}
+
 @media (max-width: 1830px) {
     .home .left .social_media {
         padding: 0;
@@ -822,7 +843,63 @@ body {
         width: 1000px;
         border-radius: 0 50% 50% 0;
     }
+    .case_study footer .wrapper .right .contacts h3, body .project h3 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .case_study {
+        .top_part {
+            flex-direction: column;
+            img {
+                width: 200px;
+            }
+            .text {
+                h2 {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+                p {
+                    line-height: 25px;
+                    margin-left: 0;
+                }
+            }
+        }
+        .project span {
+            font-size: 20px;
+        }
+        .bottom {
+            padding: 0 10px;
+        }
+        footer {
+            margin: 25px 25px 20px;
+        }
+    }
 } 
+
+@media (max-width: 1560px) {
+    .case_study {
+        .heading2 h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+        .boxes {
+            h3 {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+            .images {
+                width: 100%;
+            }
+        }
+        .process .wrapper, .ss .wrapper {
+            flex-direction: column;
+            .text {
+                margin: 40px 50px;
+                padding: 3rem;
+            }
+        }
+    }
+}
 
 @media (max-width: 1455px) {
     .home {
@@ -854,9 +931,14 @@ body {
     body {
         header{
             padding: 10px 2rem;
+            .logo img {
+                width: 60px;
+                padding: 2px 4px;
+                border-bottom: 3px solid black;
+            }
             .nav {
                 position: fixed;
-                top: 117.46px;
+                top: 83.11px;
                 right: -100%;
                 width: 100%;
                 height: 100vh;
@@ -871,6 +953,12 @@ body {
                     margin: 0;
                     button {
                         margin-bottom: 30px;
+                        a {
+                            padding: 10px 20px;
+                            &:hover {
+                                padding: 10px 20px;
+                            }
+                        }
                     }
                 }
                 a {
@@ -934,6 +1022,20 @@ body {
         .heading p {
             padding: 0 50px;
         }
+        .project p {
+            text-align: center;
+        }
+        .bottom {
+            p {
+                text-align: center;
+            }
+            .social {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+        }
     }
     #works {
         .ellipse2 {
@@ -955,20 +1057,42 @@ body {
             padding: 60px 0;
         }
     }
-    body {
-        .project p {
-            text-align: center;
+
+    .case_study {
+        padding-top: 7rem;
+        .summary .ellipse, .process .ellipse, .ss .ellipse {
+            width: 900px;
+            height: 900px;
         }
-        .bottom {
-            p {
-                text-align: center;
+        .options {
+            flex-direction: column;
+            align-items: center;
+            .box {
+                margin: 20px 0;
             }
-            .social {
-                display: flex;
+        }
+        footer .wrapper {
+            flex-direction: column;
+            .top_part {
+                margin-bottom: 50px;
+                flex-direction: row;
+                flex: none;
                 justify-content: center;
-                flex-wrap: wrap;
+                .text {
+                    text-align: center;
+                }
             }
-            
+            .right .contacts h3, .project h3 {
+                font-size: 30px;
+                line-height: 25px;
+            }
+            .right {
+                width: 100%;
+                margin-top: 50px;
+                .contacts h3 {
+                    text-align: center;
+                }
+            }
         }
     }
 }
@@ -1015,6 +1139,15 @@ body {
                     line-height: 30px;
                 }
             }
+        }
+    }
+    .case_study {
+        .boxes {
+            margin: 0 25px 50px;
+        }
+        .summary .ellipse, .process .ellipse, .ss .ellipse {
+            width: 700px;
+            height: 700px;
         }
     }
 }
@@ -1093,59 +1226,96 @@ body {
         width: 600px;
         height: 1000px;
     }
+    .case_study {
+        .boxes {
+            padding: 20px;
+            border-radius: 70px;
+            margin: 0 20px 50px;
+            .padd {
+                padding: 30px;
+            }
+            .wrapper .text {
+                margin: 40px 0;
+                padding: 2rem;
+            }
+            .text p, .text li {
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+        .summary .ellipse, .process .ellipse, .ss .ellipse {
+            width: 450px;
+            height: 700px;
+        }
+        .options .box {
+            width: 550px;
+            padding: 20px 20px 30px;
+            border-radius: 40px;
+        }
+    }
 }
 
 @media (max-width: 630px) {
-    body .home {
-        margin: 0 10px;
-        .left {
-            .discount {
-                h2 {
-                    font-size: 45px;    
-                    line-height: 40px;
-                }
-                span {
-                    font-size: 20px;
-                }
-                p {
-                    font-size: 25px;
-                    line-height: 30px;
-                }
-                .button button {
-                    padding: 10px 15px;
-                    font-size: 20px;
-                }
-            }
-            .social_media {
-                padding: 30px 30px 0 30px;
-            }
+    body {
+        section {
+            padding-top: 7rem;
         }
-        .right {
-            padding: 10px;
-            .button {
-                a {
-                    text-decoration: none;
-                    color: black;
-                    font-size: 20px;
+        .home {
+            margin: 0 10px;
+            .left {
+                border-radius: 500px 500px 300px 300px;
+                .discount {
+                    padding: 30px 30px 0;
+                    h2 {
+                        font-size: 45px;    
+                        line-height: 40px;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 25px;
+                        line-height: 30px;
+                    }
+                    .button button {
+                        padding: 10px 15px;
+                        font-size: 20px;
+                    }
+                }
+                .social_media {
+                    padding: 15px 15px 20px;
+                    a {
+                        margin: 0;
+                    }
                 }
             }
-            .up {
-                height: 60vh;
-                h1 {
-                    line-height: 50px;
-                    font-size: 60px;
+            .right {
+                padding: 10px;
+                .button {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 20px;
+                    }
                 }
-                span {
-                    font-size: 25px;
-                    line-height: 25px;
+                .up {
+                    height: 60vh;
+                    h1 {
+                        line-height: 50px;
+                        font-size: 60px;
+                    }
+                    span {
+                        font-size: 25px;
+                        line-height: 25px;
+                    }
                 }
-            }
-            .down {
-                margin: 0;
-
-                .images img:last-child {
-                    left: 20px;
-                    top: 5rem;
+                .down {
+                    margin: 0;
+    
+                    .images img:last-child {
+                        left: 20px;
+                        top: 5rem;
+                    }
                 }
             }
         }
@@ -1255,6 +1425,40 @@ body {
                 padding: 0;
             }
         }
+        .footer {
+            text-align: center;
+            padding: 20px 30px 20px;
+            font-size: 15px;
+        }
+        .case_study {
+            .heading2 {
+                h2 {
+                    font-size: 35px;
+                    text-align: center;
+                }
+                .details {
+                    padding: 30px;
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .boxes h3 {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .options .box {
+                width: 450px;
+                padding: 20px 20px 30px;
+                border-radius: 40px;
+            }
+            footer .wrapper .top_part {
+                margin-bottom: 50px;
+                flex-direction: column;
+                flex: none;
+                justify-content: center;
+            }
+        }
     }
 }
 
@@ -1314,6 +1518,35 @@ body {
         .buttons a {
             font-size: 18px;
             padding: 10px 30px;
+        }
+        .case_study {
+            .boxes {
+                padding: 15px;
+                border-radius: 40px;
+                margin: 0 20px 25px;
+                img {
+                    border-radius: 30px;
+                    box-shadow: 0 0 15px rgba(131, 65, 65, 0.5);
+                }
+                .wrapper .text {
+                    border-radius: 40px;
+                    margin: 20px 0;
+                }
+                h3 {
+                    font-size: 25px;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+            }
+            .options .box {
+                width: 350px;
+                padding: 15px 15px 20px;
+                border-radius: 40px;
+            }
+            .summary .ellipse, .process .ellipse, .ss .ellipse {
+                width: 300px;
+                height: 500px;
+            }
         }
     }
 }
