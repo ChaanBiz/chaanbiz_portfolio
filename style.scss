@@ -904,8 +904,10 @@ body {
         }
         .home {
             margin: 0 50px;
-            .left .social_media {
-                padding-bottom: 50px;
+            .left {
+                .social_media {
+                    padding-bottom: 50px;
+                }
             }
             .right .up {
                 height: 50vh;
@@ -938,9 +940,11 @@ body {
                 h1 {
                     line-height: 20px;
                     font-size: 75px;
+                    text-align: center;
                 }
                 span {
                     line-height: 30px;
+                    text-align: center;
                 }
                 .button p {
                     font-size: 27px;
@@ -955,6 +959,45 @@ body {
                         left: 30px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body header {
+        padding: 10px 50px;
+    }
+    .home {
+        .left {
+            .discount {
+                h2 {
+                    font-size: 45px;    
+                    line-height: 30px;
+                }
+                span {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+                .button button {
+                    font-size: 23px;
+                }
+            }
+            .social_media {
+                padding: 30px 30px 0 30px;
+            }
+        }
+        .right .up {
+            h1 {
+                line-height: 50px;
+                font-size: 60px;
+            }
+            span {
+                font-size: 25px;
+                line-height: 25px;
             }
         }
     }

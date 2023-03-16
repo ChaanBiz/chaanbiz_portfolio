@@ -900,9 +900,11 @@ body .buttons a:active {
   .home .right .up h1 {
     line-height: 20px;
     font-size: 75px;
+    text-align: center;
   }
   .home .right .up span {
     line-height: 30px;
+    text-align: center;
   }
   .home .right .up .button p {
     font-size: 27px;
@@ -916,6 +918,36 @@ body .buttons a:active {
   }
   .home .right .down .images img:last-child {
     left: 30px;
+  }
+}
+@media (max-width: 600px) {
+  body header {
+    padding: 10px 50px;
+  }
+  .home .left .discount h2 {
+    font-size: 45px;
+    line-height: 30px;
+  }
+  .home .left .discount span {
+    font-size: 20px;
+  }
+  .home .left .discount p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .home .left .discount .button button {
+    font-size: 23px;
+  }
+  .home .left .social_media {
+    padding: 30px 30px 0 30px;
+  }
+  .home .right .up h1 {
+    line-height: 50px;
+    font-size: 60px;
+  }
+  .home .right .up span {
+    font-size: 25px;
+    line-height: 25px;
   }
 }
 
