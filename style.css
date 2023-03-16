@@ -922,31 +922,63 @@ body .buttons a:active {
 }
 @media (max-width: 600px) {
   body header {
-    padding: 10px 50px;
+    padding: 10px 25px;
   }
-  .home .left .discount h2 {
+  body .home {
+    margin: 0 10px;
+  }
+  body .home .left .discount h2 {
     font-size: 45px;
-    line-height: 30px;
+    line-height: 40px;
   }
-  .home .left .discount span {
+  body .home .left .discount span {
     font-size: 20px;
   }
-  .home .left .discount p {
+  body .home .left .discount p {
     font-size: 25px;
     line-height: 30px;
   }
-  .home .left .discount .button button {
-    font-size: 23px;
+  body .home .left .discount .button button {
+    padding: 10px 15px;
+    font-size: 20px;
   }
-  .home .left .social_media {
+  body .home .left .social_media {
     padding: 30px 30px 0 30px;
   }
-  .home .right .up h1 {
+  body .home .right {
+    padding: 10px;
+  }
+  body .home .right .button a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  body .home .right .up {
+    height: 60vh;
+  }
+  body .home .right .up h1 {
     line-height: 50px;
     font-size: 60px;
   }
-  .home .right .up span {
+  body .home .right .up span {
     font-size: 25px;
+    line-height: 25px;
+  }
+  body .home .right .down {
+    margin: 0;
+  }
+  body .home .right .down .images img:last-child {
+    left: 20px;
+    top: 5rem;
+  }
+  .home .right .down .button button, .home .right .up .button button {
+    padding: 10px 30px;
+  }
+  .home .right .down .button button a, .home .right .up .button button a {
+    font-size: 20px;
+  }
+  .home .right .down .button p, .home .right .up .button p {
+    font-size: 20px;
     line-height: 25px;
   }
 }
